@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -35,6 +35,23 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
+            <div id="controle-fonte">
+                <button onclick="aumentarFont()">A+</button>
+                <button onclick="diminuirFont()">A-</button>
+                <div id="controle-contraste"></div>
+                <button onclick="ativarContraste()">Ativar Contraste</button>
+                <button onclick="desativarContraste()">Desativar Contraste</button>
+              </div>
+              <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+                <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                <script>
+                  new window.VLibras.Widget(`https://vlibras.gov.br/app`);
+                </script>
+              </div>
         </section>
     </header>
     <div class="home-container">
@@ -200,5 +217,5 @@
     </footer>
 
 </body>
-
+<script src="script.js"></script>
 </html>

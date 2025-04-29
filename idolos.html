@@ -1,60 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Idolos</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="pagina.css">
-    <link rel="icon" href="img/Santos_Logo.png" type="image/x-icon">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ídolos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="pagina.css">
+  <link rel="icon" href="img/Santos_Logo.png" type="image/x-icon">
 </head>
 <body>
-    <div class="container2">
-    <header class="header">
-        <section>
-            <a href="#" class="logo">
-                <img src="img/Santos_Logo.png" alt="Logo dev santos">
-            </a>
-            <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="#about">Sobre</a>
-                <a href="#catalogo">Catálogo</a>
-                <a href="#review">Avaliações</a>
-                <a href="#address">Endereço</a>
-                <a href="idolos.html">Ídolos</a>
-                <a href="historia.html">História</a>
-            </nav>
+  <header class="header">
+    <section>
+      <a href="#" class="logo">
+        <img src="img/Santos_Logo.png" alt="Logo Santos">
+      </a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#review">Avaliações</a>
+        <a href="#address">Endereço</a>
+        <a href="idolos.html">Ídolos</a>
+        <a href="historia.html">História</a>
+      </nav>
+      <div class="icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+     
+    </section>
+    <div id="controle-fonte">
+        <button onclick="aumentarFont()">A+</button>
+        <button onclick="diminuirFont()">A-</button>
+        <div id="controle-contraste"></div>
+        <button onclick="ativarContraste()">Ativar Contraste</button>
+        <button onclick="desativarContraste()">Desativar Contraste</button>
+      </div>
+  </header>
 
-            <div class="icons">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-        </section>
-    </header>
-
-    <div class=container1 > 
-    
-        <center><h2>História do Santos</h2></center>
-    
-        <p>O Santos Futebol Clube é berço de lendas. Ao longo das décadas, o Peixão revelou craques que marcaram o futebol mundial com talento, ousadia e amor à camisa. São nomes que representam não só a grandeza do clube, mas também a história do esporte brasileiro.</p>
-
-  <p><strong>Pelé</strong>, o Rei do Futebol, eternizou o manto alvinegro com mais de mil gols e três Copas do Mundo. Com ele, o Santos se tornou conhecido em todos os cantos do planeta.</p>
-
-  <p><strong>Pepe</strong>, o Canhão da Vila, foi o segundo maior artilheiro da história do clube e parceiro fiel de Pelé nos anos dourados.</p>
-
-  <p><strong>Giovanni</strong>, o Messias da Vila, encantou a torcida nos anos 90 com dribles mágicos e gols decisivos, reacendendo a paixão da Nação Santista.</p>
-
-  <p><strong>Neymar Jr.</strong>, o Menino da Vila moderno, devolveu o brilho ao time nos anos 2010 com títulos, jogadas geniais e carisma global.</p>
-
-  <p>Esses são apenas alguns dos muitos craques que ajudaram a construir a identidade vitoriosa do Santos. Cada geração teve seus heróis. Aqui, o passado inspira o presente — e a história continua sendo escrita a cada novo toque na bola.</p>
-    
-        <img src="https://www.diariodopeixe.com.br/wp-content/uploads/2022/12/6431718853_91593d65a6_o.jpg" width="500">
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
     </div>
-</div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+  </div>
+
+  <main>
+    <center><h2>História do Santos</h2></center>
+    <p>O Santos Futebol Clube é berço de lendas. Ao longo das décadas, o Peixão revelou craques que marcaram o futebol mundial com talento, ousadia e amor à camisa. São nomes que representam não só a grandeza do clube, mas também a história do esporte brasileiro.</p>
+    <p><strong>Pelé</strong>, o Rei do Futebol, eternizou o manto alvinegro com mais de mil gols e três Copas do Mundo. Com ele, o Santos se tornou conhecido em todos os cantos do planeta.</p>
+    <p><strong>Pepe</strong>, o Canhão da Vila, foi o segundo maior artilheiro da história do clube e parceiro fiel de Pelé nos anos dourados.</p>
+    <p><strong>Giovanni</strong>, o Messias da Vila, encantou a torcida nos anos 90 com dribles mágicos e gols decisivos, reacendendo a paixão da Nação Santista.</p>
+    <p><strong>Neymar Jr.</strong>, o Menino da Vila moderno, devolveu o brilho ao time nos anos 2010 com títulos, jogadas geniais e carisma global.</p>
+    <p>Esses são apenas alguns dos muitos craques que ajudaram a construir a identidade vitoriosa do Santos. Cada geração teve seus heróis. Aqui, o passado inspira o presente — e a história continua sendo escrita a cada novo toque na bola.</p>
+    <img src="https://www.diariodopeixe.com.br/wp-content/uploads/2022/12/6431718853_91593d65a6_o.jpg" width="500" alt="Ídolos do Santos">
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

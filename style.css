@@ -70,12 +70,10 @@ section {
     height: 30px;
     color: var(--white);
     cursor: pointer;
-
 }
 
 .icons i:hover {
     transform: scale(1.2);
-
 }
 
 .btn {
@@ -239,69 +237,242 @@ section {
     height: 2.5rem;
     font-size: 1.7rem;
     cursor: pointer;
-  }
-  
-  .footer .share i:hover {
+}
+
+.footer .share i:hover {
     transform: scale(1.2);
     color: var(--main-color);
-  }
-  
-  .footer-container {
+}
+
+.footer-container {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .footer .logo img {
+}
+
+.footer .logo img {
     width: 120px;
     margin-bottom: 1rem;
-  }
-  
-  .footer-nav {
+}
+
+.footer-nav {
     margin: 1rem 0;
-  }
-  
-  .footer-nav a {
+}
+
+.footer-nav a {
     margin: 0 1rem;
     font-size: 1.3rem;
     color: var(--white);
     text-decoration: none;
     font-weight: 500;
-  }
-  
-  .footer-nav a:hover {
+}
+
+.footer-nav a:hover {
     color: var(--main-color);
     border-bottom: 0.1rem solid var(--main-color);
     padding-bottom: 0.3rem;
-  }
-  
-  .footer-copy {
+}
+
+.footer-copy {
     font-size: 1rem;
     margin-top: 1rem;
     color: rgba(255, 255, 255, 0.6);
-  }
-  
-  .logo img {
+}
+
+.logo img {
     width: 120px;
     margin-bottom: 1rem;
-  }
-  h1 {
+}
+
+h1 {
     color: #000000;
     text-shadow: 2px 2px 3px white;
-  }
-  img {
+}
+
+img {
     width: 20rem;
     height: auto;
-    border-radius: 10px; ;
-  }
-  .box img{
+    border-radius: 10px;
+}
+
+.box img {
     width: 100px;
     height: 100px;
-  }
-  idolos-container {
+}
+
+idolos-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
     margin: 2rem 0;
-  }
+}
+
+#controle-fonte {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: var(--white);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#controle-fonte button:hover {
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&display=swap');
+
+:root {
+    --bg: #f4f4f4;
+    --primary: #000000;
+    --secondary: #ffffff;
+    --accent: #d3ad7f;
+    --text: #333;
+    --border: 1px solid rgba(0, 0, 0, 0.1);
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding-top: 100px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-shadow: var(--shadow);
+    z-index: 999;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 5px;
+}
+
+.icons i {
+    font-size: 1.3rem;
+    margin-left: 15px;
+    cursor: pointer;
+    color: var(--primary);
+    transition: 0.2s;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+    color: var(--accent);
+}
+
+#controle-fonte button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#controle-fonte button:hover {
+    background-color: var(--accent);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.footer {
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer a {
+    color: var(--secondary);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #controle-fonte {
+        margin-top: 10px;
+    }
+}
